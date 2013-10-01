@@ -1,4 +1,4 @@
-class tomcat ($version, $java_home, $java_ops) {
+class tomcat ($version = 'tomcat7', $java_home = '/usr/lib/jvm/java-7-oracle', $java_ops) {
   include tomcat::install
   include tomcat::config
   include tomcat::service
