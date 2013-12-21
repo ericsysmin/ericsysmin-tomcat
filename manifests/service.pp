@@ -1,7 +1,5 @@
 class tomcat::service {
-  include tomcat::params
-
-  service { $tomcat::params::version:
+  service { $tomcat::version:
     ensure => running,
     enable => true,
   }

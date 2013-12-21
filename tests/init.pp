@@ -8,15 +8,15 @@
 #
 # Learn more about module testing here: http://docs.puppetlabs.com/guides/tests_smoke.html
 #
-# class { 'tomcat':
-#  version   => 'tomcat6',
-#  java_home => '/usr/lib/jvm/java-6-oracle',
-#  java_opts => [
-#    '-Xms160g -Xmx160g -XX:+UseConcMarkSweepGC -XX:NewRatio=3',
-#    '-Djavax.sql.DataSource.Factory=org.apache.commons.dbcp.BasicDataSourceFactory',
-#    '-Dcom.sun.management.jmxremote.port=1099 -Dcom.sun.management.jmxremote.ssl=false',
-#    "-Djava.rmi.server.hostname=${::ipaddress}",
-#    "-Dcom.sun.management.jmxremote.password.file=/etc/${tomcat::version}/jmxremote.password",
-#    "-Dcom.sun.management.jmxremote.access.file=/etc/${tomcat::version}/jmxremote.access",
-#    '-javaagent:/opt/newrelic/newrelic.jar']
-#}
+class { 'tomcat':
+  version   => 'tomcat7',
+  java_home => '/usr/lib/jvm/java-6-oracle',
+  java_opts => [
+    '-Xms160g -Xmx160g -XX:+UseConcMarkSweepGC -XX:NewRatio=3',
+    '-Djavax.sql.DataSource.Factory=org.apache.commons.dbcp.BasicDataSourceFactory',
+    '-Dcom.sun.management.jmxremote.port=1099 -Dcom.sun.management.jmxremote.ssl=false',
+    "-Djava.rmi.server.hostname=${::ipaddress}",
+    "-Dcom.sun.management.jmxremote.password.file=/etc/${tomcat::version}/jmxremote.password",
+    "-Dcom.sun.management.jmxremote.access.file=/etc/${tomcat::version}/jmxremote.access",
+    '-javaagent:/opt/newrelic/newrelic.jar']
+}
