@@ -1,3 +1,35 @@
+# == Class: tomcat
+#
+# Configures and installs tomcat6 on Ubuntu
+#
+# === Parameters
+#
+# [*version*]
+#
+# [*java_home*]
+#
+# [*java_opts*]
+#
+# [*jsp_compiler*]
+#
+# [*security*]
+#
+# [*logfile_days*]
+#
+# [*jvm_tmp*]
+#
+# [*authbind*]
+#
+#
+# === Examples
+#  class { 'tomcat':
+#     version => 'tomcat6',
+#  }
+#
+# === Authors
+#
+# Eric Anderson <eric.sysmin@gmail.com>
+#
 class tomcat (
   $version      = $tomcat::params::version,
   $java_home    = $tomcat::params::java_home,
