@@ -1,0 +1,25 @@
+{
+  "author": "ericsysmin",
+  "checksums": {
+    "templates/etc_default_tomcat6": "3c85af6c47d907a78226c87cabaf2774",
+    "Modulefile": "3866d0ac8ef760c3174d4ca8064c8a5a",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/etc_default_tomcat7": "a861da45a670dbf6a9d97c179c460333",
+    "manifests/init.pp": "c40a8de69f453ecc29262313a0b702bd",
+    "manifests/install.pp": "1b7ff72e757d3a3ff59608f2931f2766",
+    "manifests/service.pp": "ea539c79b843adad38c041c16468fd4a",
+    "manifests/params.pp": "1451bcc5a613cf6b3213b87ba8a0e92a",
+    "manifests/config.pp": "06f290955d06fac0d0e36bc45b33e796",
+    "tests/init.pp": "3c37e119f5f6cf59f6fe785903497202",
+    "README.md": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "dependencies": [],
+  "description": "",
+  "license": "Apache License, Version 2.0",
+  "name": "ericsysmin-tomcat",
+  "project_page": "https://github.com/ericsysmin/ericsysmin-tomcat",
+  "source": "https://github.com/ericsysmin/ericsysmin-tomcat",
+  "summary": "Puppet module to manage tomcat on Ubuntu",
+  "types": [],
+  "version": "0.1.0"
+}

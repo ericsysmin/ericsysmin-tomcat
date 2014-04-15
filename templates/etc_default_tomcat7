@@ -22,11 +22,8 @@ JAVA_HOME=<%= @javaHome %>
 # exactly one CPU chip that contains one or two cores, you should also add
 # the "-XX:+CMSIncrementalMode" option.
 #JAVA_OPTS="-Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC"
-JAVA_OPTS=""
-<% if @java_opts and ! @java_opts.empty? -%>
-<% Array(@java_opts).each do |java_opt| -%>
-JAVA_OPTS="${JAVA_OPTS} <%= java_opt %>"
-<% end -%>
+<% if @java_opts -%>
+JAVA_OPTS="<%= java_opts %>"
 <% end -%>
 
 # To enable remote debugging uncomment the following line.

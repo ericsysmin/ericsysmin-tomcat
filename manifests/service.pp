@@ -4,7 +4,7 @@
 # running.
 #
 # === Examples
-#  include tomcat::params
+#  include tomcat::service
 #
 # === Authors
 #

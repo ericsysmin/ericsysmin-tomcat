@@ -21,11 +21,8 @@ JAVA_HOME=<%= @javaHome %>
 # response time). If you use that option and you run Tomcat on a machine with
 # exactly one CPU chip that contains one or two cores, you should also add
 # the "-XX:+CMSIncrementalMode" option.
-JAVA_OPTS=""
-<% if @java_opts and ! @java_opts.empty? -%>
-<% Array(@java_opts).each do |java_opt| -%>
-JAVA_OPTS="${JAVA_OPTS} <%= java_opt %>"
-<% end -%>
+<% if @java_opts -%>
+JAVA_OPTS="<%= java_opts %>"
 <% end -%>
 
 # To enable remote debugging uncomment the following line.

@@ -1,4 +1,4 @@
-# == Class: tomcat
+# == Class: tomcat::config
 #
 # Configures the /etc/default/tomcat file for the specific version requested.
 #
