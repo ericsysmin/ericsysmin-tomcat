@@ -29,7 +29,7 @@
 # Eric Anderson <eric.sysmin@gmail.com>
 #
 class tomcat::params (
-  $version,
+  $version      = 6,
   $java_home    = undef,
   $java_opts    = '-Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC',
   $jsp_compiler = undef,

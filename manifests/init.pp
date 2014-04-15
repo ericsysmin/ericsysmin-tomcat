@@ -23,7 +23,7 @@
 #
 # === Examples
 #  class { 'tomcat':
-#     version => 'tomcat6',
+#     version => '6',
 #  }
 #
 # === Authors

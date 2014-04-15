@@ -11,7 +11,7 @@
 # Eric Anderson <eric.sysmin@gmail.com>
 #
 class tomcat::service {
-  service { $tomcat::version:
+  service { "tomcat${tomcat::version}":
     ensure => running,
     enable => true,
   }

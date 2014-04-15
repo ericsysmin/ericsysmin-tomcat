@@ -10,8 +10,8 @@
 # Eric Anderson <eric.sysmin@gmail.com>
 #
 class tomcat::config {
-  file { "/etc/default/${tomcat::version}":
+  file { "/etc/default/tomcat${tomcat::version}":
     ensure  => file,
-    content => template("tomcat/etc_default_${tomcat::version}"),
+    content => template("tomcat/etc_default_tomcat${tomcat::version}"),
   }
 }

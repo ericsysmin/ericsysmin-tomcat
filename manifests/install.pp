@@ -10,5 +10,5 @@
 # Eric Anderson <eric.sysmin@gmail.com>
 #
 class tomcat::install {
-  package { $tomcat::version: ensure => present, }
+  package { "tomcat${tomcat::version}": ensure => present, }
 }
