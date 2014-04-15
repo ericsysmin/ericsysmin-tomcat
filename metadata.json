@@ -11,7 +11,7 @@
     "manifests/params.pp": "208c41c24ccf9989e909eb04b19934d2",
     "manifests/config.pp": "d73db85f300d66052a76adffde1dd53f",
     "tests/init.pp": "337b88b4a666be079498ee3291f572b8",
-    "README.md": "d41d8cd98f00b204e9800998ecf8427e"
+    "README.md": "a6bfa80caf2290970501b9b087a37849"
   },
   "dependencies": [],
   "description": "",
