@@ -2,7 +2,7 @@
   "author": "ericsysmin",
   "checksums": {
     "templates/etc_default_tomcat6": "3c85af6c47d907a78226c87cabaf2774",
-    "Modulefile": "66f78c66f546af65703fd0e9d38cf575",
+    "Modulefile": "d89392a9865e07e461c481cf0823060a",
     "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
     "templates/etc_default_tomcat7": "a861da45a670dbf6a9d97c179c460333",
     "manifests/init.pp": "893f788b8672a0ccbf53e0451de2ffe5",
@@ -11,7 +11,7 @@
     "manifests/params.pp": "208c41c24ccf9989e909eb04b19934d2",
     "manifests/config.pp": "d73db85f300d66052a76adffde1dd53f",
     "tests/init.pp": "337b88b4a666be079498ee3291f572b8",
-    "README.md": "a6bfa80caf2290970501b9b087a37849"
+    "README.md": "1204c3445bc77479ae5ec5a8ee38026b"
   },
   "dependencies": [],
   "description": "",
@@ -21,5 +21,5 @@
   "source": "https://github.com/ericsysmin/ericsysmin-tomcat",
   "summary": "Puppet module to manage tomcat on Ubuntu",
   "types": [],
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
