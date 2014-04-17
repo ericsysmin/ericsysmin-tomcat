@@ -1,17 +1,21 @@
 {
   "author": "ericsysmin",
   "checksums": {
-    "templates/etc_default_tomcat6": "3c85af6c47d907a78226c87cabaf2774",
-    "Modulefile": "d89392a9865e07e461c481cf0823060a",
-    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
-    "templates/etc_default_tomcat7": "a861da45a670dbf6a9d97c179c460333",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "Gemfile": "8ce927d4f60b88c1b020898481eae38d",
     "manifests/init.pp": "893f788b8672a0ccbf53e0451de2ffe5",
     "manifests/install.pp": "bf06b03ad8ace816fafa770e0c055623",
+    "manifests/config.pp": "d73db85f300d66052a76adffde1dd53f",
+    "README.md": "1204c3445bc77479ae5ec5a8ee38026b",
+    "templates/etc_default_tomcat6": "3c85af6c47d907a78226c87cabaf2774",
+    "Modulefile": "d89392a9865e07e461c481cf0823060a",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "templates/etc_default_tomcat7": "a861da45a670dbf6a9d97c179c460333",
+    ".travis.yml": "2d7efaee846818914da04f57e66ecd58",
+    "Rakefile": "8ad2fc44c6681194653fb31cfe07d72e",
     "manifests/service.pp": "f660e43ec73d25df0428fbfe2f0c5166",
     "manifests/params.pp": "208c41c24ccf9989e909eb04b19934d2",
-    "manifests/config.pp": "d73db85f300d66052a76adffde1dd53f",
-    "tests/init.pp": "337b88b4a666be079498ee3291f572b8",
-    "README.md": "1204c3445bc77479ae5ec5a8ee38026b"
+    "tests/init.pp": "337b88b4a666be079498ee3291f572b8"
   },
   "dependencies": [],
   "description": "",
