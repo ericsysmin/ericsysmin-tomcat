@@ -39,7 +39,7 @@ class tomcat (
   $logfile_days = $tomcat::params::logfile_days,
   $jvm_tmp      = $tomcat::params::jvm_tmp,
   $authbind     = $tomcat::params::authbind) inherits tomcat::params {
-  include tomcat::install
-  include tomcat::config
-  include tomcat::service
+  class { 'tomcat::install': } ->
+  class { 'tomcat::config': } ~>
+  class { 'tomcat::service': }
 }

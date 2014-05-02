@@ -12,6 +12,6 @@
 class tomcat::config {
   file { "/etc/default/tomcat${tomcat::version}":
     ensure  => file,
-    content => template("tomcat/etc_default_tomcat${tomcat::version}.erb"),
+    content => template('tomcat/etc_default_tomcat.erb'),
   }
 }

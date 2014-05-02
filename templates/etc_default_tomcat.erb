@@ -1,17 +1,17 @@
 # Run Tomcat as this user ID. Not setting this or leaving it blank will use the
-# default of tomcat7.
-TOMCAT7_USER=tomcat7
+# default of tomcat<%= @version %>.
+TOMCAT<%= @version %>_USER=tomcat<%= @version %>
 
 # Run Tomcat as this group ID. Not setting this or leaving it blank will use
-# the default of tomcat7.
-TOMCAT7_GROUP=tomcat7
+# the default of <% @version.downcase %>.
+TOMCAT<%= @version %>_GROUP=tomcat<%= @version %>
 
 # The home directory of the Java development kit (JDK). You need at least
-# JDK version 1.5. If JAVA_HOME is not set, some common directories for
+# JDK version 1.5. If JAVA_HOME is not set, some common directories for 
 # OpenJDK, the Sun JDK, and various J2SE 1.5 versions are tried.
 #JAVA_HOME=/usr/lib/jvm/openjdk-6-jdk
-<% if @javaHome -%>
-JAVA_HOME=<%= @javaHome %>
+<% if @java_home -%>
+JAVA_HOME=<%= @java_home %>
 <% end -%>
 
 # You may pass JVM startup parameters to Java here. If unset, the default
@@ -22,7 +22,7 @@ JAVA_HOME=<%= @javaHome %>
 # exactly one CPU chip that contains one or two cores, you should also add
 # the "-XX:+CMSIncrementalMode" option.
 <% if @java_opts -%>
-JAVA_OPTS="<%= java_opts %>"
+JAVA_OPTS="<% @java_opts.each do |param| %><%= param %> <% end %>"
 <% end -%>
 
 # To enable remote debugging uncomment the following line.
@@ -37,12 +37,12 @@ JSP_COMPILER=<%= @jsp_compiler %>
 <% end -%>
 
 # Use the Java security manager? (yes/no, default: no)
-#TOMCAT7_SECURITY=no
+#TOMCAT<%= @version %>_SECURITY=no
 <% if @security -%>
-TOMCAT7_SECURITY=<%= @security %>
+TOMCAT<%= @version %>_SECURITY=<%= @security %>
 <% end -%>
 
-# Number of days to keep logfiles in /var/log/tomcat7. Default is 14 days.
+# Number of days to keep logfiles in /var/log/tomcat<%= @version %>. Default is 14 days.
 #LOGFILE_DAYS=14
 <% if @logfile_days -%>
 LOGFILE_DAYS=<%= @logfile_days %>
@@ -50,7 +50,7 @@ LOGFILE_DAYS=<%= @logfile_days %>
 
 # Location of the JVM temporary directory
 # WARNING: This directory will be destroyed and recreated at every startup !
-#JVM_TMP=/tmp/tomcat7-temp
+#JVM_TMP=/tmp/tomcat<%= @version %>-temp
 <% if @jvm_tmp -%>
 JVM_TMP=<%= @jvm_tmp %>
 <% end -%>
@@ -63,3 +63,9 @@ JVM_TMP=<%= @jvm_tmp %>
 <% if @authbind -%>
 AUTHBIND=<%= @authbind %>
 <% end -%>
+
+<% if @version == '6' %>
+# Unset LC_ALL to prevent user environment executing the init script from
+# influencing servlet behavior.  See Debian bug #645221
+unset LC_ALL
+<% end %>

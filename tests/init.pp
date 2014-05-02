@@ -12,7 +12,7 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 class { 'tomcat':
-  version   => '6',
-  java_home => '/usr/lib/jvm/java-6-oracle',
-  java_opts => '-Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:NewRatio=3'
+  version   => '7',
+  java_home => '/usr/lib/jvm/java-8-oracle',
+  java_opts => ['-Xms1g', '-Xmx1g', '-XX:+UseConcMarkSweepGC', '-XX:NewRatio=3']
 }
