@@ -1,24 +1,30 @@
 {
-  "author": "ericsysmin",
-  "checksums": {
-    "Modulefile": "d89392a9865e07e461c481cf0823060a",
-    "manifests/init.pp": "893f788b8672a0ccbf53e0451de2ffe5",
-    "templates/etc_default_tomcat6.erb": "3c85af6c47d907a78226c87cabaf2774",
-    "manifests/install.pp": "bf06b03ad8ace816fafa770e0c055623",
-    "manifests/service.pp": "f660e43ec73d25df0428fbfe2f0c5166",
-    "manifests/params.pp": "208c41c24ccf9989e909eb04b19934d2",
-    "templates/etc_default_tomcat7.erb": "5a3f5ba3f1bb8dfd8fa230d588da648e",
-    "manifests/config.pp": "5b30f87040af074adf995a265ac3050f",
-    "tests/init.pp": "337b88b4a666be079498ee3291f572b8",
-    "README.md": "1204c3445bc77479ae5ec5a8ee38026b"
-  },
-  "dependencies": [],
-  "description": "",
-  "license": "Apache License, Version 2.0",
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.2.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
   "name": "ericsysmin-tomcat",
-  "project_page": "https://github.com/ericsysmin/ericsysmin-tomcat",
+  "version": "0.2.0",
+  "summary": "Tomcat Module for Ubuntu",
+  "author": "Eric Anderson",
+  "description": "Puppet module to manage tomcat on Ubuntu",
+  "dependencies": [],
   "source": "https://github.com/ericsysmin/ericsysmin-tomcat",
-  "summary": "Puppet module to manage tomcat on Ubuntu",
-  "types": [],
-  "version": "0.1.2"
+  "project_page": "http://github.com/ericsysmin/ericsysmin-tomcat",
+  "license": "Apache Version 2.0",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04"
+      ]
+    }
+  ]
 }

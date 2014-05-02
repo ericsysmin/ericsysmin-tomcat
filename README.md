@@ -11,6 +11,11 @@ This module is to configure and install Tomcat on Ubuntu servers
 class { 'tomcat':
   version   => '6',
   java_home => '/usr/lib/jvm/java-6-oracle',
-  java_opts => '-Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:NewRatio=3'
+  java_opts => [
+    '-Xms1g',
+    '-Xmx1g',
+    '-XX:+UseConcMarkSweepGC',
+    '-XX:NewRatio=3'
+    ]
 }
 ```
