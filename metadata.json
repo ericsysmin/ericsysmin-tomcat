@@ -1,4 +1,14 @@
 {
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.2.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
   "name": "ericsysmin-tomcat",
   "version": "1.0.0",
   "summary": "Tomcat Module for Ubuntu",
