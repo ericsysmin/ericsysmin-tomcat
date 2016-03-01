@@ -1,6 +1,6 @@
 # == Class: tomcat
 #
-# Configures and installs tomcat6 on Ubuntu
+# Configures and installs tomcat on Ubuntu
 #
 # === Parameters
 #
