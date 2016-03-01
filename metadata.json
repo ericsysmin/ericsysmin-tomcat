@@ -1,20 +1,9 @@
 {
-  "requirements": [
-    {
-      "name": "pe",
-      "version_requirement": "3.2.x"
-    },
-    {
-      "name": "puppet",
-      "version_requirement": "3.x"
-    }
-  ],
   "name": "ericsysmin-tomcat",
   "version": "1.0.0",
   "summary": "Tomcat Module for Ubuntu",
   "author": "Eric Anderson",
   "license": "GPLv2",
-  "description": "Puppet module to manage tomcat on Ubuntu",
   "dependencies": [],
   "source": "https://github.com/ericsysmin/puppet-tomcat",
   "project_page": "https://forge.puppetlabs.com/ericsysmin/tomcat",
