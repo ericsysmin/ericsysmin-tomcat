@@ -18,7 +18,7 @@
   "source": "https://github.com/ericsysmin/puppet-tomcat",
   "project_page": "https://forge.puppetlabs.com/ericsysmin/tomcat",
   "issues_url": "https://github.com/ericsysmin/puppet-tomcat/issues",
-  "tags": ["tomcat", "java", "ubuntu", "debian"],
+  "tags": ["tomcat", "java", "ubuntu", "debian", "tomcat6", "tomcat7", "6", "7"],
   "operatingsystem_support": [
     {
       "operatingsystem": "Ubuntu",
