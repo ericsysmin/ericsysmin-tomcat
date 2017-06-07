@@ -1,12 +1,13 @@
-#ericsysmin-tomcat
+# ericsysmin-tomcat
 
-##Description
+## Description
 
 This module is to configure and install Tomcat on Ubuntu servers
 
-##How to use:
+## How to use:
 
-###How to configure and install Tomcat
+### How to configure and install Tomcat
+
 ```ruby
 class { 'tomcat':
   version   => '6',
